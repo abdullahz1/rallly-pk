@@ -191,11 +191,10 @@ export function PayWallDialog({
                 {selectedPlan === "pro" && (
                   <label
                     htmlFor="annual-switch"
-                    className="flex items-start justify-between gap-4 rounded-lg bg-gray-100 p-4 dark:bg-gray-700"
+                    className="relative flex select-none items-start justify-between gap-4 overflow-hidden rounded-lg bg-gray-50 p-4 ring ring-black/5 ring-inset hover:bg-gray-100 dark:bg-gray-700/50 dark:ring-white/10 dark:hover:bg-gray-700"
                   >
-                    <div className="mt-1">
-                      <BadgeDollarSignIcon className="size-5 text-green-500 dark:text-green-400" />
-                    </div>
+                    <BadgeDollarSignIcon className="pointer-events-none absolute -top-5 right-16 size-24 opacity-5" />
+
                     <div className="flex-1">
                       <div className="text-sm">
                         <Trans

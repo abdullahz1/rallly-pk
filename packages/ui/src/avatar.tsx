@@ -10,7 +10,7 @@ const avatarVariants = cva(
     variants: {
       size: {
         xl: "size-12 rounded-xl text-lg",
-        lg: "size-8 rounded-md text-base",
+        lg: "size-8 rounded-md text-sm",
         md: "size-5 rounded-md text-[10px]",
         sm: "size-4 rounded text-[8px]",
       },

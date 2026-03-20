@@ -83,7 +83,7 @@ export function SpacesList({ spaces, currentUserId }: SpacesListProps) {
           return (
             <StackedListItem key={space.id}>
               <div className="flex flex-1 items-center gap-4">
-                <SpaceIcon src={space.image} name={space.name} />
+                <SpaceIcon src={space.image} size="lg" name={space.name} />
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2">
                     <h3 className="truncate font-semibold text-sm">

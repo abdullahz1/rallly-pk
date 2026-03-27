@@ -88,7 +88,7 @@ const PollHeader = () => {
             style={{ height: monthRowHeight }}
             className={cn("sticky top-0 z-10 border-l bg-background text-left")}
           >
-            <div className="sticky right-0 left-[235px] inline-flex h-5 gap-1 px-2 py-0.5 font-medium text-xs uppercase">
+            <div className="sticky right-0 left-[236px] inline-flex h-5 gap-1 px-2 py-0.5 font-medium text-xs uppercase">
               <span>{group.month}</span>
               <span className="text-muted-foreground">{group.year}</span>
             </div>

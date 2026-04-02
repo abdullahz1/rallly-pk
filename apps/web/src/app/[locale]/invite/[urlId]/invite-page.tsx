@@ -50,7 +50,8 @@ export function InvitePage() {
   const poll = usePoll();
 
   return (
-    <div className="h-dvh overflow-auto overscroll-none bg-gray-100 p-3 lg:p-6 dark:bg-gray-900">
+    <div className="page-bg-gray-100 h-dvh overflow-auto p-3 lg:p-6 dark:bg-gray-900">
+      <div className="page-bg-gray-100 hidden" />
       <PollViewTracker pollId={poll.id} />
       <div className="mx-auto w-full max-w-4xl space-y-3">
         <GoToApp />

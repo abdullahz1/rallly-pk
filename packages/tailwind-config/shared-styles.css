@@ -224,6 +224,9 @@
       "rlig" 1,
       "calt" 1;
   }
+  html.light body:has(.page-bg-gray-100) {
+    @apply bg-gray-100;
+  }
   html {
     @apply h-full font-sans text-base text-gray-700;
   }

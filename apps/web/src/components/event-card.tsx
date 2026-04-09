@@ -49,7 +49,7 @@ export function EventCard() {
     <Card>
       <RandomGradientBar />
       <CardContent className="flex flex-col gap-x-8 gap-y-4 md:flex-row">
-        <div className="flex-1">
+        <div className="flex flex-1 flex-col">
           {poll.space?.showBranding && poll.space.image ? (
             <div className="mb-2">
               <SpaceIcon
@@ -68,7 +68,7 @@ export function EventCard() {
           {poll.description ? (
             <EventMetaDescription>{poll.description}</EventMetaDescription>
           ) : null}
-          <EventMetaList className="mt-4">
+          <EventMetaList className="pt-4 md:mt-auto">
             {poll.user ? (
               <EventMetaItem>
                 <User2Icon />

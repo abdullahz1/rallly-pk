@@ -77,7 +77,7 @@
   --sidebar-accent: var(--color-gray-800);
   --sidebar-accent-foreground: #f9fafb;
 
-  --border: oklch(0.274 0.006 286.033);
+  --border: oklch(0.32 0.006 286.033);
   --border-muted: var(--color-gray-800);
 
   --input: var(--color-gray-700);
@@ -101,7 +101,7 @@
   --popover-foreground: var(--color-gray-300);
   --popover-accent: var(--color-gray-700);
 
-  --card: var(--color-gray-800);
+  --card: oklch(0.24 0.006 286.033);
   --card-border: var(--color-gray-700);
   --card-foreground: var(--color-gray-300);
   --card-accent: rgba(255, 255, 255, 0.02);

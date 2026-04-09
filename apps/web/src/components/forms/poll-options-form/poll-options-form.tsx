@@ -93,7 +93,7 @@ const PollOptionsForm = ({
 
   return (
     <Card>
-      <CardHeader>
+      <CardHeader className="border-card-border border-b">
         <div className="flex flex-col justify-between gap-4 sm:flex-row">
           <div>
             <CardTitle>

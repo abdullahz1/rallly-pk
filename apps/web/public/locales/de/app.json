@@ -619,5 +619,14 @@
   "viewPoll": "Umfrage ansehen",
   "responseOptions": "Antwortoptionen",
   "viewResults": "Ergebnisse ansehen",
-  "pollClosedDescription": "Es werden keine Antworten mehr akzeptiert."
+  "pollClosedDescription": "Es werden keine Antworten mehr akzeptiert.",
+  "showBrandingDescription": "Dein Marken-Branding auf öffentlichen Seiten und in E-Mails anzeigen",
+  "useCustomBranding": "Eigenes Branding aktivieren",
+  "customBranding": "Eigenes Branding",
+  "customBrandingDescription": "Präsentiere deinen Teilnehmern dein Logo und deine Markenfarben",
+  "customBrandingPromptTitle": "Eigenes Branding",
+  "customBrandingPromptDescription": "Du hast den Pro-Plan. Füge deine Markenfarben zu Umfragen und E-Mails hinzu.",
+  "customBrandingPromptCta": "Jetzt einrichten",
+  "dismiss": "Verwerfen",
+  "new": "Neu"
 }

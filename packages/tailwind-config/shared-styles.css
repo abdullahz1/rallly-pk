@@ -104,7 +104,7 @@
   --card: oklch(0.24 0.006 286.033);
   --card-border: var(--color-gray-700);
   --card-foreground: var(--color-gray-300);
-  --card-accent: rgba(255, 255, 255, 0.02);
+  --card-accent: oklch(0.26 0.006 286.033);
 }
 
 @theme inline {

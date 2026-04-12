@@ -17,7 +17,7 @@ import type * as React from "react";
 import DiscordIcon from "@/assets/discord.svg";
 import GithubIcon from "@/assets/github.svg";
 import LinkedinIcon from "@/assets/linkedin.svg";
-import TwitterIcon from "@/assets/twitter.svg";
+import XIcon from "@/assets/x.svg";
 import { LinkBase } from "@/i18n/client/link";
 import { Trans } from "@/i18n/client/trans";
 import { useTranslation } from "@/i18n/client/use-translation";
@@ -96,14 +96,14 @@ export const Footer: React.FunctionComponent = () => {
               />
             </div>
           </div>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4">
             <a
               target="_blank"
-              href="https://twitter.com/ralllyco"
+              href="https://x.com/ralllyco"
               className="text-gray-500 text-sm hover:text-primary hover:no-underline"
               rel="noreferrer noopener"
             >
-              <TwitterIcon className="size-5" />
+              <XIcon className="size-4" />
             </a>
             <a
               target="_blank"
@@ -111,7 +111,7 @@ export const Footer: React.FunctionComponent = () => {
               className="text-gray-500 text-sm hover:text-primary hover:no-underline"
               rel="noreferrer noopener"
             >
-              <DiscordIcon className="size-5" />
+              <DiscordIcon className="size-4" />
             </a>
             <a
               target="_blank"
@@ -119,7 +119,7 @@ export const Footer: React.FunctionComponent = () => {
               className="text-gray-500 text-sm hover:text-primary hover:no-underline"
               rel="noreferrer noopener"
             >
-              <LinkedinIcon className="size-5" />
+              <LinkedinIcon className="size-4" />
             </a>
             <a
               target="_blank"
@@ -127,7 +127,7 @@ export const Footer: React.FunctionComponent = () => {
               className="text-gray-500 text-sm hover:text-primary hover:no-underline"
               rel="noreferrer noopener"
             >
-              <GithubIcon className="size-5" />
+              <GithubIcon className="size-4" />
             </a>
           </div>
         </div>

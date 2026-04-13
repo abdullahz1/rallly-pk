@@ -7,27 +7,34 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { useLocalStorage } from "react-use";
+import { useUser } from "@/components/user-provider";
 import { useSpace } from "@/features/space/client";
 import { Trans, useTranslation } from "@/i18n/client";
+import { isBusinessEmail } from "@/utils/is-business-email";
 
 export function CustomBrandingPrompt() {
   const { t } = useTranslation();
   const { data: space } = useSpace();
+  const { user } = useUser();
   const posthog = usePostHog();
 
   const [isDismissed, setIsDismissed] = useLocalStorage(
-    `custom-branding-prompt-dismissed-${space.id}`,
+    "custom-branding-prompt-dismissed",
     false,
   );
 
   const [showPrompt, setShowPrompt] = React.useState(false);
 
+  const hasBusinessEmail = user?.email ? isBusinessEmail(user.email) : false;
+
   React.useEffect(() => {
-    if (space.tier === "hobby" || space.showBranding) {
+    if (space.showBranding) {
       return;
     }
-    setShowPrompt(true);
-  }, [space.showBranding, space.tier]);
+    if (hasBusinessEmail) {
+      setShowPrompt(true);
+    }
+  }, [space.showBranding, hasBusinessEmail]);
 
   if (isDismissed || !showPrompt) {
     return null;
@@ -64,7 +71,7 @@ export function CustomBrandingPrompt() {
         <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
           <Trans
             i18nKey="customBrandingPromptDescription"
-            defaults="You're on the Pro plan. Add your brand colors to polls and emails."
+            defaults="Get professional scheduling polls with your own logo and colors."
           />
         </p>
         <div className="mt-6 flex gap-2">

@@ -56,7 +56,7 @@ export function EventMetaItem({
     <li
       className={cn(
         className,
-        "flex items-center gap-1.5 text-sm [&_svg]:size-4",
+        "flex flex-wrap items-center gap-1.5 text-sm [&_svg]:size-4 [&_svg]:shrink-0",
       )}
     >
       {children}

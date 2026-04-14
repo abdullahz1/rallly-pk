@@ -8,10 +8,7 @@ export const BillingPlan = ({
 }: React.PropsWithChildren<{ className?: string }>) => {
   return (
     <div
-      className={cn(
-        "space-y-4 rounded-xl border bg-white px-5 py-4",
-        className,
-      )}
+      className={cn("space-y-4 rounded-xl border bg-card px-5 py-4", className)}
     >
       {children}
     </div>

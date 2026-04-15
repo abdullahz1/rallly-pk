@@ -55,7 +55,7 @@ export function EventCard() {
               <SpaceIcon
                 name={poll.space.name}
                 src={poll.space.image}
-                size="lg"
+                size="xl"
               />
               <p className="mt-2 font-medium text-muted-foreground text-sm">
                 {poll.space.name}

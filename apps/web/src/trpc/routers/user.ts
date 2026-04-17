@@ -300,6 +300,7 @@ export const user = router({
       const emailClient = await getEmailClient();
       emailClient.sendEmail({
         to: "feedback@rallly.co",
+        replyTo: ctx.user.email ?? undefined,
         subject: "Feedback",
         text: `User: ${ctx.user.name} (${ctx.user.email})\n\n${input.content}`,
       });

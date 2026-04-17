@@ -131,12 +131,14 @@ export const BigTestimonial = () => {
       viewport={{ once: true, amount: "all" }}
       className="flex flex-col items-center gap-y-8"
     >
-      <Image
-        src="/static/images/stars-5.svg"
-        width={120}
-        height={30}
-        alt="5 stars"
-      />
+      <div className="relative h-[30px] w-[120px]">
+        <Image
+          src="/static/images/stars-5.svg"
+          fill
+          style={{ objectFit: "contain" }}
+          alt="5 stars"
+        />
+      </div>
       <div className="text-center">
         <p className="max-w-xl text-center font-medium text-lg leading-normal">
           <Trans

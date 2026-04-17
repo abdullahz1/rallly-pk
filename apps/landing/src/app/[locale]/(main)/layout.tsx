@@ -45,8 +45,16 @@ export default async function Root(props: {
     <div className="relative z-10 mx-auto flex min-h-full w-full max-w-7xl flex-col space-y-8 p-4 sm:p-8">
       <header className="flex w-full items-center">
         <div className="flex grow items-center gap-x-12">
-          <LinkBase className="inline-block rounded-sm" href="/">
-            <Image src="/logo.svg" width={130} height={30} alt="rallly.co" />
+          <LinkBase
+            className="relative inline-block h-[30px] w-[130px] rounded-sm"
+            href="/"
+          >
+            <Image
+              src="/logo.svg"
+              fill
+              alt="rallly.co"
+              className="object-contain"
+            />
           </LinkBase>
           <nav className="hidden items-center gap-2 lg:flex">
             <NavLink href="https://support.rallly.co/workflow/create">

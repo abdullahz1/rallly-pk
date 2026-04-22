@@ -15,15 +15,10 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@rallly/ui/dropdown-menu";
-import { Icon } from "@rallly/ui/icon";
 import { Input } from "@rallly/ui/input";
 import { toast } from "@rallly/ui/sonner";
 import { Textarea } from "@rallly/ui/textarea";
-import {
-  MessageSquareOffIcon,
-  MoreHorizontalIcon,
-  TrashIcon,
-} from "lucide-react";
+import { MoreHorizontalIcon, TrashIcon } from "lucide-react";
 import * as React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { OptimizedAvatarImage } from "@/components/optimized-avatar-image";
@@ -275,17 +270,7 @@ function DiscussionInner() {
 export default function Discussion() {
   const poll = usePoll();
   if (poll.disableComments) {
-    return (
-      <p className="rounded-lg bg-muted p-4 text-center text-muted-foreground text-sm">
-        <Icon>
-          <MessageSquareOffIcon className="mr-2 inline-block" />
-        </Icon>
-        <Trans
-          i18nKey="commentsDisabled"
-          defaults="Comments have been disabled"
-        />
-      </p>
-    );
+    return null;
   }
   return <DiscussionInner />;
 }
